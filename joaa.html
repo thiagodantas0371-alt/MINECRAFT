@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromo</title> <!-- ✅ Título da aba do navegador -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #e0f7fa, #ffffff);
+            color: #111;
+            line-height: 1.5;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0 2rem;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #000000; /* Ficou preto combinando com o botão */
+        }
+        .menu {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            cursor: pointer;
+        }
+        .menu span {
+            width: 18px;
+            height: 2px;
+            background: #333;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        .destaque-texto {
+            color: #00897b;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+        }
+        .botoes {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        .btn-principal {
+            background: #000000;
+            color: #ffffff;
+            font-weight: bold;
+            border: none;
+            padding: 0.85rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.45rem;
+            text-align: center;
+            line-height: 1;
+            overflow: visible;
+        }
+        .btn-principal svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        .btn-secundario {
+            background: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .card.escuro {
+            background: #121212;
+            color: #fff;
+        }
+        .icone {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+        }
+        .etapas {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .etapa {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        .numero {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00897b;
+            min-width: 30px;
+        }
+        .caixa-destaque {
+            background: #e0f7fa;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .destaque-azul {
+            color: #006064;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <div class="logo">Chromo</div> <!-- ✅ Nome do site lá em cima -->
+        <div class="menu">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <h1>Criação de páginas profissionais para apresentar o que tu faz e facilitar contatos</h1>
+    <p>Crio páginas focadas no que tu oferece e no resultado que quer alcançar — como receber mensagem direto no WhatsApp ou mostrar o teu trabalho.</p>
+
+    <div class="botoes">
+
+        <a href="https://wa.me/5568992511588" class="btn-principal" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.21 3.074.149.198 2.096 3.2 5.077 4.487.709.305 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zm-5.42 7.403h-.004c-2.986 0-5.845-1.028-8.116-2.936l-.575-.375-2.038.538.543-1.984-.385-.593c-2.008-3.023-2.732-6.42-2.023-9.857.704-3.435 3.044-6.28 6.376-7.567 3.332-1.287 7.056-.665 9.764 1.66 2.708 2.325 4.035 5.755 3.33 9.19-.703 3.434-3.043 6.279-6.375 7.566-1.537.594-3.124.897-4.718.903-1.594.005-3.187-.294-4.724-.887zm10.588-14.704C18.515 2.648 15.722.958 12.633.446 9.544-.065 6.426.726 4.067 2.648 1.708 4.57.374 7.478.232 10.569c-.141 3.091 1.188 6.012 3.543 7.934l.582.476-1.998.523-.573.154.479-1.874.465-1.817.613.412c2.444 1.643 5.266 2.524 8.153 2.524h.006c3.375 0 6.603-1.307 8.982-3.687 2.379-2.379 3.686-5.607 3.687-8.984.001-3.377-1.305-6.605-3.685-8.984z"/>
+            </svg>
+            Falar pelo WhatsApp
+        </a>
+        <a href="COLA_AQUI_O_LINK_DO_SEGUNDO_BOTAO" class="btn-secundario" target="_blank">Ver como funciona</a>
+    </div>
+
+    <div class="card">
+        <div class="icone">✅</div>
+        <h3>Resumo do que entrego</h3>
+        <p>✅ Página feita só pra ti<br>✅ Pronta em poucos dias<br>✅ Funciona em todo o Brasil e em qualquer celular</p>
+    </div>
+
+    <h2 class="destaque-texto">Quando uma página assim faz sentido</h2>
+    <p>Uma página concentra tudo importante num só lugar: o que tu faz, como funciona e onde te encontrar. Começa simples e vai crescendo conforme precisar.</p>
+
+    <div class="card">
+        <div class="icone">📈</div>
+        <h3>Divulgar serviço ou produto</h3>
+        <p>Direciona quem visita direto pro que importa — sem confusão.</p>
+    </div>
+
+    <div class="card">
+        <div class="icone">📢</div>
+        <h3>Apresentar ou lançar algo</h3>
+        <p>Organiza tudo sobre o teu trabalho, projeto ou novidade num único endereço.</p>
+    </div>
+
+    <div class="card">
+        <div class="icone">💬</div>
+        <h3>Receber contatos</h3>
+        <p>Quem entra já sabe onde te mandar mensagem — direto ou por formulário.</p>
+    </div>
+
+    <div class="card escuro">
+        <h3>O que pode ter na tua página</h3>
+        <p>Definimos tudo antes de começar pra não ficar faltando nada.</p>
+        <br>
+        <p>🎨 <strong>Visual e textos organizados</strong><br>Claro, bonito e fácil de ler em qualquer tela.</p>
+        <br>
+        <p>📱 <strong>Funciona bem em celular</strong><br>Ajusta direitinho em qualquer aparelho.</p>
+        <br>
+        <p>💬 <strong>Botão pra contato direto</strong><br>WhatsApp ou formulário — do jeito que tu preferir.</p>
+        <br>
+        <p>🔍 <strong>Pronta pra aparecer na busca</strong><br>Feita com estrutura certa pra ser encontrada.</p>
+        <br>
+        <p>📊 <strong>Contar acessos</strong><br>Ver quantas pessoas visitam quando precisar.</p>
+    </div>
+
+    <h2 class="destaque-texto">Como funciona: do início ao fim</h2>
+    <p>Definimos primeiro tudo o que vai ter pra depois fazer direto — sem surpresas.</p>
+
+    <div class="etapas">
+        <div class="etapa">
+            <div class="numero">1</div>
+            <div><strong>Conversa e entender o que tu quer</strong><br>Saber o objetivo, o público e o que é mais importante pra ti.</div>
+        </div>
+        <div class="etapa">
+            <div class="numero">2</div>
+            <div><strong>Acordar tudo antes</strong><br>Texto, fotos, cores, endereço — tudo combinado primeiro.</div>
+        </div>
+        <div class="etapa">
+            <div class="numero">3</div>
+            <div><strong>Montar e ajustar</strong><br>Feito, testado e arrumado pra ficar perfeito.</div>
+        </div>
+        <div class="etapa">
+            <div class="numero">4</div>
+            <div><strong>Colocar no ar</strong><br>Tu aprova e fica disponível pra todo mundo.</div>
+        </div>
+        <div class="etapa">
+            <div class="numero">5</div>
+            <div><strong>Primeiro mês incluso</strong><br>Ajustes pequenos e suporte no começo.</div>
+        </div>
+    </div>
+
+    <div class="caixa-destaque">
+        <h3 class="destaque-azul">Prazo de até 7 dias depois de tudo aprovado</h3>
+        <p>Depois que tu aprovar tudo e entregar o que precisamos, pronto em até uma semana. Se precisar de coisa maior, combinamos o tempo certo.</p>
+    </div>
+
+</body>
+</html>
